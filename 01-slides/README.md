@@ -109,32 +109,50 @@ $ source pbdata/bin/activate
 ### Python Pandas
 
 test your previous installation on ipython shell
-
-```python
-In [1]: import pandas
+```bash
+(pbdata)$ cd 02-pandas-tutorial
+(pbdata)$ ipython
 ```
 
 make something obvious
 
 ```python
-In [2] from pandas import 
+In [1]: import pandas as pd
+In [2]: df = pd.read_csv("data/titanic.csv")
+In [3]: df.head()
 ```
 
 --
 
-### About pandas
+### About Pandas
 
->“The bibliometrics research area that deal with the study of citations: the relationship between a part/whole cited doc and a part/whole of the citing doc.”
+>“_Pandas_ provides high-level data structures and functions designed 
+>to make working with structured or tabular data fast, easy, and 
+>expressive.”
+###### Python for Data Analysis, 2thE (McKinney2018).
 
-##### Linda C. Smith (1981). *Citation Analysis*. Report at University of Illinois.
-##### Morton V. Malin (1968). *The Science Citation Index: A New Concept inen Indexing*. Library Trends 16 (Jan. 1968):376.
+#### Perfect for "Medium" Data: 5-100Gb
+
+#### Where to learn pandas? Book [*Python for Data Analysis*](http://github.com/wesm/pydata-book). Wes McKinney (2018).
+#### [Local doc about virtualenv](file:///usr/share/doc/python-pandas-doc/html/index.html)
+#### [Official & Online Doc](https://pandas.pydata.org/pandas-docs/stable/)
+#### [Tutorial EuroSciPy 2017](https://github.com/jorisvandenbossche/pandas-tutorial)
 
 --
 
 ## Pandas in Action
 
->“the situation in which pre-existing written material is consciously used again during the creation of a new text or version”
-#### Measuring text reuse in the news industry (Clough, 2010)
+Let's open pandas notebook inside folder **02-pandas-tutorial**.
+###### Is the first notebook of the [EuroSciPy 2017 Pandas Tutorial](https://github.com/jorisvandenbossche/pandas-tutorial)
+
+### Make sure you are in the _pbdata_ virtualenv! 
+
+```bash
+(pbdata)$ cd 02-pandas-tutorial
+(pbdata)$ jupyter notebook
+```
+
+Let's work in the browser.
 
 ---
 
