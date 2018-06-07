@@ -1,4 +1,4 @@
-![Bokeh Logo](https://github.com/sorice/...)
+![Pandas & Bokeh Logos](../imgs/logos_.jpg)
 
 ## "Adquirir, Manipular y Visualizar datos con Python: Pandas y Bokeh"
 
@@ -33,7 +33,7 @@ ________________________
 ## What is all about?
 
 - _python virtualenv_: preparing for real work!
-- python-pandas __Acquisition__ & __Munging__ data.
+- python-pandas __Acquisition__ & __Wrangling__ data.
 - python-bokeh Data __Visualization__
   - Bokeh in jupyter notebooks
   - Deploying bokeh
@@ -156,35 +156,79 @@ Let's work in the browser.
 
 ---
 
-## Python Bokeh
+### The gap between pandas & bokeh
+##### (some steps between wrangling & visualization)
 
+* __Multidimensional Data Arrays__: [numpy]() and [scipy.ndimage]()
+* __Data Statistical Analysis__: [statsmodels](), [scipy.stats]()
+* __Data Clustering or Classification__: [sklearn](), [scipy]()
+
+---
+
+## Python Visualization
+
+Preparing the virtualenv
+
+```bash
+(pbdata)$ pip install -i http://<my_IP_address>/pipdir matplotlib altair
+```
 Test bokeh installation with ipython shell
 
 ```python
 In [1] import bokeh
 ```
 
-Let's do it a basic example
+Let's do it a basic ploting example
 
 ```python
-
+(pbdata)$ pandas as pd
+(pbdata)$ pd.read_csv('data/iris.csv')
+(pbdata)$ import matplotlib.pyplot as plt
+(pbdata)$ iris.plot(kind='hist', stacked=True, bins=20, alpha=0.5)
+(pbdata)$ plt.show()
 ```
 
 --
 
 ### About Bokeh
-...
+
+>"Bokeh is an interactive visualization library that targets modern web 
+browsers for presentation. Its goal is to provide elegant, concise 
+construction of versatile plots"
+
+#### Where to learn bokeh?
+
+#### [Bokeh Official & Online Doc](https://bokeh.pydata.org/en/latest/docs/gallery.html)
+#### [Online tutorial](https://github.com/bokeh/bokeh-notebooks/)
+#### [PyCon 2017 Tutorial](https://github.com/chalmerlowe/bokeh_tutorial)
 
 --
 
 ### Bokeh in Action
 
-...
+Let's open pandas notebook inside folder **03-bokeh-tutorial**.
+###### Is the first notebook of the [PyCon 2017 Bokeh Tutorial](https://github.com/chalmerlowe/bokeh_tutorial)
+
+### Make sure you are in the _pbdata_ virtualenv! 
+
+```bash
+(pbdata)$ cd 03-bokeh-tutorial
+(pbdata)$ jupyter notebook
+```
+
+Let's work in the browser again.
 
 ---
 
 ## Results
 
+### You tell me!
+
 ---
 
 ## Conclusions
+
+* Python is very mature for science.
+* Python is very mature for developing apps.
+* Less working and go faster using techs like virtualenv
+* Share and learn from people who share, you will optimize time
